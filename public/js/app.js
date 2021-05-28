@@ -31,7 +31,7 @@ weatherForm.addEventListener('submit', (e) => {
 
                 const forcast = 'Its ' + temperature + ' degrees in ' + location + ' ,but it feels like ' + feels_like +
                     ' degrees. Forcast is ' + weather_description + ' and chance of rain is ' +
-                    chance_of_rain + '% and humidity of ' + humidity
+                    chance_of_rain + '% and humidity of ' + humidity + '%'
 
                 messageOne.textContent = location
                 messageTwo.textContent = forcast
