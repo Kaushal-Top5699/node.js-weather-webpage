@@ -27,10 +27,11 @@ weatherForm.addEventListener('submit', (e) => {
                 const temperature = data.temperature
                 const feels_like = data.feels_like
                 const chance_of_rain = data.chance_of_rain
+                const humidity = data.humidity
 
                 const forcast = 'Its ' + temperature + ' degrees in ' + location + ' ,but it feels like ' + feels_like +
                     ' degrees. Forcast is ' + weather_description + ' and chance of rain is ' +
-                    chance_of_rain + '%'
+                    chance_of_rain + '% and humidity of ' + humidity
 
                 messageOne.textContent = location
                 messageTwo.textContent = forcast

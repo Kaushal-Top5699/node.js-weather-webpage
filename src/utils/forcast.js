@@ -16,12 +16,14 @@ const forcast = (latitude, longitude, callback) => {
             const weatherDsecription = response.body.current.weather_descriptions[0]
             const feels_like = response.body.current.feelslike
             const chanceOfRain = response.body.current.precip
+            const humidity = response.body.current.humidity
 
             const weatherData = {
                 temperature,
                 weatherDsecription,
                 feels_like,
-                chanceOfRain
+                chanceOfRain,
+                humidity
             }
             callback(undefined, weatherData)
         }

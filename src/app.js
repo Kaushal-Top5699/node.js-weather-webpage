@@ -58,7 +58,7 @@ app.get('/weather', (req, res) => {
                 error
             })
         }
-        forcast(lat, lon, (error, { temperature, weatherDsecription, feels_like, chanceOfRain } = {}) => {
+        forcast(lat, lon, (error, { temperature, weatherDsecription, feels_like, chanceOfRain, humidity } = {}) => {
             if (error) {
                 return res.send({
                     error
@@ -69,7 +69,8 @@ app.get('/weather', (req, res) => {
                 temperature,
                 weather_description: weatherDsecription,
                 chance_of_rain: chanceOfRain,
-                feels_like
+                feels_like,
+                humidity
             })
         })
     })
